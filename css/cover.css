@@ -1,0 +1,359 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus
+{
+  color: #f00;
+  text-decoration: underline;
+}
+
+a:hover {
+  color:#800;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-family: "Courier New","Courier";
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
+  background-image: url(../img/clusterfuckcover1.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+.edinburgh-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/edinburgh.jpg);
+
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+  height:100%;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Courier New";
+font-weight: bold;
+font-size:2em;
+  text-shadow:none;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f00; /* IE8 proofing */
+  color: rgba(255,0,0,1);
+  border-bottom: 2px solid transparent;
+  text-shadow:none;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+    margin-left:30px;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.press{
+  margin-bottom:10px;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+ .cover-container {
+    height: auto;
+  }
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+}
+  /* Handle the widths */
+  .masthead{
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+
+  background:     #fffffe;
+  padding:10px;
+
+  color:#111111;
+  z-index: 999;
+ -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+  }
+
+
+
+
+.section-container{
+  background-color:     #ffffff;
+  width:100%;
+  overflow:hidden;
+  color:black;
+  text-shadow:none;
+  padding-top:25px;
+  padding-bottom: 25px;
+  height:auto;
+
+
+}
+h1 {
+  font-family: "Courier New";
+  font-weight: Bold;
+  }
+
+  .inner.cover{
+    text-shadow:1px 1px 5px 1px rgba(0, 0, 0, 1);
+  }
+
+
+
+  .pullleft{
+    text-align: left;
+  }
+  .pullright{
+    text-align: right;
+  }
+  @media (max-width: 768px) { 
+  .pullleft{
+    text-align: center;
+  }
+  .pullright{
+    text-align: center;
+  }
+  }
+  .timeout{
+    width:15em;
+    clear:right;
+    box-shadow: 2px 2px 5px rgba(0,0,0,1);
+
+  }
+
+  /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .timeout{
+    width:15em;
+
+  }
+   }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .timeout{
+    width:20em;
+    clear:right;
+    box-shadow: 2px 2px 5px rgba(0,0,0,1);
+
+  }
+  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+.overlay {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   height:600px; /* your iframe height */
+   top:600px;  /* your iframe height */
+   margin-top:-600px;  /* your iframe height */
+}
+
+
+.img-feature{
+  max-width:150px;
+  margin:40px;
+}
+
+h2{
+  font-weight: bold;
+}
+.textrow p{
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+}
+
+.textrow{
+
+  max-width:1200px;
+  margin: 0 auto;
+}
+
+.textrow h2{
+  color:#f00;
+}
+
+#social img{
+  width:32px;
+}
+.lead-cover {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-shadow:1px 1px 3px 3px rgba(0,0,0,1);
+}
+
+.mail-form{
+  height:80px;
+  vertical-align: middle;!important
+}
+
+.mail-container{
+   color:black;
+  margin: 0 auto;
+  padding-top:25px;
+  background:white;
+  padding-bottom:25px;
+    background-color:     #ffffff;
+  width:100%;
+  overflow:hidden;
+  color:black;
+  text-shadow:none;
+  padding-top:25px;
+  padding-bottom: 25px;
+  height:auto;
+
+}
+
+
+@media (max-width: 768px) { 
+.form-control{
+  margin-left:10%;
+  margin-right:10%;
+  width:80%;
+}
+}
+form{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.row.map{
+  background-color: white;
+}
+
+.mail-btn{
+  margin:0 auto;
+}
